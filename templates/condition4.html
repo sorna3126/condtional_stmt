@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        
+        <h1>nested if </h1>
+        {% if a > b %}
+            {% if a > c %}
+                {% if a > d %}
+                <h1> A is Greater</h1>
+                {% else %}
+                <h1> D is Greater</h1>
+                {% endif %}
+            {% else %}
+            <h1> C is Greater</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                {% if b > d %}
+                <h1> B is Greater</h1>
+                {% else %}
+                <h1> D is Greater</h1>
+                {% endif %}
+            {% else %}
+            <h1> C is Greater</h1>
+            {% endif %}
+        {% endif %}
+
+
+
+    
+    </center>
+</body>
+</html>
